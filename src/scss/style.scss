@@ -1,0 +1,175 @@
+$font-family-sans-serif: 'Arimo', sans-serif;
+$headings-font-family: 'Montserrat', sans-serif;
+$headings-font-weight: 700 !default;
+$blue: #7878F6;
+$dark: #282828;
+
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/_type';
+@font-face {
+	font-family: 'Arimo';
+	src: url('../fonts/arimo.ttf');
+}
+
+body{
+	// background: #000;
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.slider{
+	margin: 100px auto;
+	padding: 70px 0;
+	background: $white;
+	border-radius: 6px;
+	color: $dark;
+}
+.slide{
+	display: flex;
+	padding: 0 30px 0 67px;
+}
+
+main{
+	flex: 1;
+	padding: 0 67px 0 0;
+}
+.progress{
+	margin: 25px 0 50px;
+	ul{
+		display: flex;
+		margin: 0 -$spacer;
+		list-style-type: none;
+		li{
+			flex: 1;
+			margin: 0 $spacer;
+			a{
+				display: block;
+				width: 100%;
+				background: $primary;
+				opacity: .34;
+				height: 6px;
+				border-radius: 2px;
+				transition: 600ms ease-in;
+				&:not(.edit):hover{
+					opacity: .66;
+				}
+				&.edit{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.header{
+	p{
+		line-height: 21px;
+		span{
+			position: relative;
+			top: 1px;
+			font-weight: bold;
+			color: $primary;
+			margin-left: 10px;
+			font-size: $font-size-base*1.125;
+		}
+	}
+}
+
+h4{
+	font-size: 22px;
+	line-height: 32px;
+	margin-bottom: $spacer*2;
+}
+
+aside{
+	text-align: center;
+	img{
+		display: block;
+		margin: 0 auto $spacer;
+		height: 105px;
+		width: auto;
+	}
+}
+input, label{
+	cursor: pointer;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+button{
+	display: block;
+	margin: $spacer*2 auto;
+	background: $primary;
+	color: $white;
+	border: 0;
+	padding: 7px 27px;
+	transition: 200ms ease-in;
+	position: relative;
+	top: 0;
+	&:hover{
+		top: -2px;
+		background: darken($primary, 1.5%);
+	}
+	&:focus, &:active{
+		background: lighten($primary, 2.5%);
+		outline: none;
+	}
+}
+/* end main content */
+
+.sidebar{
+	background: $primary;
+	margin: -70px -30px -70px 30px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 70px 30px;
+	color: $white;
+	width: 263px;
+	h5{
+		font-size: 14px;
+		line-height: 19px;
+		text-transform: uppercase;
+		margin: auto $spacer;
+	}
+}
+.logotype{
+	display: flex;
+}
+.logo{
+	background: #fff;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	svg{
+		margin: auto;
+	}
+}
+
+.card{
+	padding: 20px;
+	background: $white;
+	border-radius: 20px;
+	margin-top: 23px;
+	position: relative;
+	&:before{
+		position: absolute;
+		top: -20px;
+		left: 20px;
+		border: 10px solid transparent;
+		border-bottom: 10px solid $white;
+		content: '';
+	}
+	p{
+		font-size: 14px;
+		line-height: 19px;
+		color: $dark;
+		margin: 0;
+	}
+}
+
+.stepscounter{
+	margin-top: 159px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="slider">
+			<div id="app" class="slide" data-slide-index=1>
+
+				<main>
+					<div class="header">
+						<p>Готово:<span>30%</span></p>
+						<div class="progress">
+							<ul>
+								<li><a href="javascript:void(0)" class="edit current"></a></li>
+								<li><a href="javascript:void(0)"></a></li>
+								<li><a href="javascript:void(0)"></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<h4>Выберите сборщик проектов, которым Вы пользуетесь:</h4>
+					<div class="row">
+						<aside class="col-md-3">
+							<img src="images/gulp.png" alt="">
+							<input type="radio" name="someNameForRadio" value="gulp" id="gulp">
+							<label for="gulp">Gulp</label>
+						</aside>
+						<aside class="col-md-3">
+							<img src="images/webpack.png" alt="">
+							<input type="radio" name="someNameForRadio" value="webpack" id="webpack">
+							<label for="webpack">Webpack</label>
+						</aside>
+						<aside class="col-md-3">
+							<img src="images/grunt.png" alt="">
+							<input type="radio" name="someNameForRadio" value="grunt" id="grunt">
+							<label for="grunt">Grunt</label>
+						</aside>
+						<aside class="col-md-3">
+							<img src="images/parcel.png" alt="">
+							<input type="radio" name="someNameForRadio" value="parcel" id="parcel">
+							<label for="parcel">Parcel</label>
+						</aside>
+					</div>
+					<button>Следующий шаг</button>
+				</main>
+
+				<div class="sidebar">
+					<div class="logotype">
+						<div class="logo">
+							<%- include('./images/logo.svg') %>
+						</div>
+						<h5>Вайскод</h5>
+					</div>
+
+					<div class="card">
+						<p>Привет, Коллега. Для попадания в команду необходимо выполнить тестовое задание, а именно сверстать и запрограммировать этот маленький квиз.</p>
+					</div>
+
+					<p class="stepscounter">
+						<b>Шаг 1</b><br>Осталось шагов 2
+					</p>
+				</div>
+			</div>
+			<div id="test"></div>
+		</div>
+	</div>
+</body>
+</html>

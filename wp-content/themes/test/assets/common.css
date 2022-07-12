@@ -5,3 +5,86 @@ header {
     max-width: 900px;
     margin: 0 auto;
 }
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Cera Round Pro', sans-serif;
+    font-weight: 400;
+}
+
+footer .container {
+    padding: 20px 0;
+    border-top: 1px solid rgba(45, 45, 45, 0.1);
+    border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+}
+
+footer .footer-text {
+    margin: auto 0;
+}
+
+footer .socials {
+    margin: auto 0 auto auto;
+}
+
+footer .socials ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    margin-right: -7.5px;
+    padding: 0;
+}
+
+footer .socials ul li {
+    margin: 0 10px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: .2px;
+    color: #C2C2C2;
+    margin: 0;
+}
+
+footer .logotype {
+    margin-right: 60px;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url('cera/CeraRoundProThin.otf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url('cera/CeraRoundProLight.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url('cera/CeraRoundProMedium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url('cera/CeraRoundProBlack.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    font-weight: 600;
+    src: url('cera/CeraRoundProBold.otf');
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url('cera/CeraRoundProRegular.otf');
+    font-weight: 400;
+}

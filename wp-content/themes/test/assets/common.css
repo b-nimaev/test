@@ -15,6 +15,69 @@ body {
     font-weight: 400;
 }
 
+button {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#banner {
+    background-color: #F2F6F8;
+    color: #2D2D2D;
+    padding: 85px 0 89px;
+}
+
+#banner ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+#banner ul li {
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0.02em;
+    font-family: 'Open sans', sans-serif;
+}
+
+#banner .heading {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+#banner button {
+    background-color: #C81059;
+    border-radius: 5px;
+    padding: 15px 80px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    margin-top: 30px;
+    border: 1px solid #C81059;
+}
+
+#banner button:hover {
+    border: 1px solid #C81059;
+    background-color: #fff;
+    color: #C81059;
+}
+
+#banner button:active {
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    color: #333333;
+    background-color: #fff;
+}
+
+#banner button:focus {
+    border: 1px solid #C81059;
+    color: #C81059;
+    background-color: #fff;
+}
+
 footer .container {
     padding: 20px 0;
     border-top: 1px solid rgba(45, 45, 45, 0.1);
@@ -86,5 +149,11 @@ footer .logotype {
 @font-face {
     font-family: 'Cera Round Pro';
     src: url('cera/CeraRoundProRegular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: url('OpenSans-Regular.ttf');
     font-weight: 400;
 }

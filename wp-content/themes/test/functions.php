@@ -139,6 +139,7 @@ add_action( 'widgets_init', 'test_widgets_init' );
  */
 function test_scripts() {
 	wp_enqueue_style( 'test-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'common-css', get_template_directory_uri() . '/assets/common.css', array(), _S_VERSION );
 	wp_style_add_data( 'test-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'test-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

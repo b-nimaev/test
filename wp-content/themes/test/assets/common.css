@@ -78,6 +78,106 @@ button {
     background-color: #fff;
 }
 
+.sectionHeading {
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: .02em;
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+#request {
+    margin: 55px 0 40px;
+}
+
+#request .wrapper {
+    background-color: #F2F6F8;
+    padding: 50px 50px 86px;
+    border-radius: 20px;
+}
+
+#request .wrapper .sectionHeading {
+    margin-bottom: 20px;
+}
+
+#request form .choose_product {
+    display: flex;
+    margin: 0 -5px 20px;
+}
+
+#request form .choose_product .input-group {
+    margin: 0 5px;
+}
+
+#request .user-data {
+    display: flex;
+}
+
+#request .user-data .data {
+    margin-right: 33px;
+}
+
+#request .user-data input[type="submit"] {
+    padding: 15px 80px;
+    background-color: #C81059;
+    border-radius: 5px;
+    letter-spacing: .02em;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid #C81059;
+    transition: cubic-bezier(1, 0, 0, 1);
+    cursor: pointer;
+}
+
+#request .user-data input[type="submit"]:hover {
+    background: #fff;
+    color: #C81059;
+}
+
+#request .user-data input[type="submit"]:active {
+    background: #fff;
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    color: #333333;
+}
+
+#request .user-data .data input {
+    padding: 15px 25px 15px;
+    font-size: 12px;
+    font-family: 'Open sans', sans-serif;
+    line-height: 150%;
+    letter-spacing: .02em;
+    outline: none;
+    border: 0;
+}
+
+#request .user-data .data input:first-child {
+    margin-right: 30px;
+}
+
+#request form .choose_product label {
+    padding: 8.5px 40px;
+    border: 1px solid rgba(45, 45, 45, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: .02em;
+}
+
+#request form .choose_product label.active {
+    padding: 8.5px 40px;
+    border: 1px solid #0099C8;
+    color: #0099C8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#request form .choose_product input {
+    display: none;
+}
+
 footer .container {
     padding: 20px 0;
     border-top: 1px solid rgba(45, 45, 45, 0.1);

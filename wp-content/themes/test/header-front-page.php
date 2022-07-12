@@ -19,6 +19,6 @@
     <?php wp_body_open(); ?>
     <header>
         <div class="container">
-            <p>Header</p>
+            <?php echo(get_custom_logo());  ?>
         </div>
     </header>

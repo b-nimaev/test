@@ -22,13 +22,90 @@ get_header('front-page');
             <h2 class="sectionHeading">Тарифные планы</h2>
             <!-- Set up your HTML -->
             <div class="owl-carousel">
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
+                <article>
+                    <h4 class="product_title">Мой клик</h4>
+                    <div class="speed-internet">
+                        <p class="text-muted">Скорость интернета</p>
+                        <h3>до 40Мбит/с</h3>
+                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                    </div>
+                    <div class="price">
+                        <h2>399 ₽</h2>
+                        <p>в месяц</p>
+                    </div>
+                    <p class="description">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
+                    </p>
+                    <button>Выбрать тариф</button>
+                </article>
+
+                <article>
+                    <h4 class="product_title">Мой клик</h4>
+                    <div class="speed-internet">
+                        <p class="text-muted">Скорость интернета</p>
+                        <h3>до 40Мбит/с</h3>
+                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                    </div>
+                    <div class="price">
+                        <h2>399 ₽</h2>
+                        <p>в месяц</p>
+                    </div>
+                    <p class="description">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
+                    </p>
+                    <button>Выбрать тариф</button>
+                </article>
+
+                <article>
+                    <h4 class="product_title">Мой клик</h4>
+                    <div class="speed-internet">
+                        <p class="text-muted">Скорость интернета</p>
+                        <h3>до 40Мбит/с</h3>
+                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                    </div>
+                    <div class="price">
+                        <h2>399 ₽</h2>
+                        <p>в месяц</p>
+                    </div>
+                    <p class="description">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
+                    </p>
+                    <button>Выбрать тариф</button>
+                </article>
+
+                <article>
+                    <h4 class="product_title">Мой клик</h4>
+                    <div class="speed-internet">
+                        <p class="text-muted">Скорость интернета</p>
+                        <h3>до 40Мбит/с</h3>
+                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                    </div>
+                    <div class="price">
+                        <h2>399 ₽</h2>
+                        <p>в месяц</p>
+                    </div>
+                    <p class="description">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
+                    </p>
+                    <button>Выбрать тариф</button>
+                </article>
+
+                <article>
+                    <h4 class="product_title">Мой клик</h4>
+                    <div class="speed-internet">
+                        <p class="text-muted">Скорость интернета</p>
+                        <h3>до 40Мбит/с</h3>
+                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                    </div>
+                    <div class="price">
+                        <h2>399 ₽</h2>
+                        <p>в месяц</p>
+                    </div>
+                    <p class="description">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
+                    </p>
+                    <button>Выбрать тариф</button>
+                </article>
             </div>
         </div>
     </section>

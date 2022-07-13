@@ -26,8 +26,14 @@ get_header('front-page');
                     <h4 class="product_title">Мой клик</h4>
                     <div class="speed-internet">
                         <p class="text-muted">Скорость интернета</p>
-                        <h3>до 40Мбит/с</h3>
+                        <h3>до 40 Мбит/с</h3>
                         <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" id="my_click_1">
+                        <label for="my_click_1">
+                            <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
+                        </label>
                     </div>
                     <div class="price">
                         <h2>399 ₽</h2>
@@ -43,8 +49,37 @@ get_header('front-page');
                     <h4 class="product_title">Мой клик</h4>
                     <div class="speed-internet">
                         <p class="text-muted">Скорость интернета</p>
-                        <h3>до 40Мбит/с</h3>
+                        <h3>до 80-100 Мбит/с</h3>
+                        <p>Отличный вариант для всей семьи. Общайтесь в соцсетях и смотрите любимые фильмы и сериалы!</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" id="my_click_2">
+                        <label for="my_click_2">
+                            <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
+                        </label>
+                    </div>
+                    <div class="price">
+                        <h2>499 ₽</h2>
+                        <p>в месяц</p>
+                    </div>
+                    <p class="description">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
+                    </p>
+                    <button>Выбрать тариф</button>
+                </article>
+
+                <article>
+                    <h4 class="product_title">Мой клик</h4>
+                    <div class="speed-internet">
+                        <p class="text-muted">Скорость интернета</p>
+                        <h3>до 40 Мбит/с</h3>
                         <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" id="my_click_3">
+                        <label for="my_click_3">
+                            <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
+                        </label>
                     </div>
                     <div class="price">
                         <h2>399 ₽</h2>
@@ -60,45 +95,17 @@ get_header('front-page');
                     <h4 class="product_title">Мой клик</h4>
                     <div class="speed-internet">
                         <p class="text-muted">Скорость интернета</p>
-                        <h3>до 40Мбит/с</h3>
-                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                        <h3>до 80-100 Мбит/с</h3>
+                        <p>Отличный вариант для всей семьи. Общайтесь в соцсетях и смотрите любимые фильмы и сериалы!</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" id="my_click_4">
+                        <label for="my_click_4">
+                            <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
+                        </label>
                     </div>
                     <div class="price">
-                        <h2>399 ₽</h2>
-                        <p>в месяц</p>
-                    </div>
-                    <p class="description">
-                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
-                    </p>
-                    <button>Выбрать тариф</button>
-                </article>
-
-                <article>
-                    <h4 class="product_title">Мой клик</h4>
-                    <div class="speed-internet">
-                        <p class="text-muted">Скорость интернета</p>
-                        <h3>до 40Мбит/с</h3>
-                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
-                    </div>
-                    <div class="price">
-                        <h2>399 ₽</h2>
-                        <p>в месяц</p>
-                    </div>
-                    <p class="description">
-                        *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
-                    </p>
-                    <button>Выбрать тариф</button>
-                </article>
-
-                <article>
-                    <h4 class="product_title">Мой клик</h4>
-                    <div class="speed-internet">
-                        <p class="text-muted">Скорость интернета</p>
-                        <h3>до 40Мбит/с</h3>
-                        <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
-                    </div>
-                    <div class="price">
-                        <h2>399 ₽</h2>
+                        <h2>499 ₽</h2>
                         <p>в месяц</p>
                     </div>
                     <p class="description">

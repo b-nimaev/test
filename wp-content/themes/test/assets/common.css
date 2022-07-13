@@ -1,10 +1,12 @@
 header {
     padding: 22px 0;
 }
+
 .container {
     max-width: 900px;
     margin: 0 auto;
 }
+
 .container .row {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +15,7 @@ header {
 body {
     font-family: 'Cera Round Pro', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 button {
@@ -87,7 +90,39 @@ button {
 }
 
 #plans {
-    padding: 52px 0;
+    padding: 52px 0 0;
+    position: relative;
+}
+
+#plans .container {
+    z-index: 1;
+    position: relative;
+}
+
+#plans::before {
+    content: '';
+    display: block;
+    width: calc(100vw - (50vw + 480px));
+    /* width: 50%; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: linear-gradient(-90deg, #ffffff0d, #fff)
+}
+
+#plans::after {
+    z-index: 2;
+    content: '';
+    display: block;
+    width: calc(100vw - (50vw + 480px));
+    /* width: 50%; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, #ffffff0d, #fff)
 }
 
 #plans .sectionHeading {
@@ -95,7 +130,13 @@ button {
 }
 
 #plans .owl-item {
-    /* width: 300px !important; */
+    width: 347px !important;
+}
+
+@media screen and (min-width: 1400px) {
+    #plans .owl-item {
+        width: 347px !important;
+    }
 }
 
 #plans article {
@@ -105,6 +146,75 @@ button {
 
 .owl-carousel .owl-stage-outer {
     overflow: visible !important;
+}
+
+#plans article .product_title {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 12.5px;
+    margin-top: 0;
+}
+
+#plans article .speed-internet {
+    margin-bottom: 24px;
+}
+
+#plans article .speed-internet .text-muted {
+    margin-bottom: 5px;
+    color: #ACACAC;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    letter-spacing: .02em;
+}
+
+#plans article .speed-internet h3 {
+    color: #C81059;
+    font-size: 25px;
+    line-height: 37.5px;
+    letter-spacing: .02em;
+    font-weight: 500;
+    margin: 0 0 4.5px;
+}
+
+#plans article .speed-internet p {
+    color: #555555;
+    letter-spacing: .02em;
+    font-size: 13px;
+    line-height: 19.5px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+#plans article .price {
+    display: flex;
+}
+
+#plans article .price h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: .02em;
+    margin: 0;
+}
+
+#plans article .price p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .02em;
+    margin: auto 0 auto 10px;
+    color: #55555580;
+}
+
+#plans .description {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: .02em;
+    color: #55555580;
+    margin: 0 0 16px;
 }
 
 #plans article button {
@@ -118,11 +228,57 @@ button {
     border: 1px solid #C81059;
     transition: 300ms;
     cursor: pointer;
+    z-index: 9999;
 }
 
 #plans article button:hover {
     color: #C81059;
     background-color: #fff;
+}
+
+#plans .input-group {
+    display: flex;
+}
+
+#plans .input-group input {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#plans .input-group input:after {
+    content: '';
+    height: 23px;
+    width: 23px;
+    background-color: #fff;
+    display: block;
+    border: 1px solid #2D2D2D10;
+    border-radius: 2px;
+    transition: 300ms;
+}
+
+#plans .input-group input:checked::after {
+    content: '';
+    height: 23px;
+    width: 23px;
+    background-color: #0099C8;
+    background-image: url('icons/y.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+#plans .input-group label {
+    cursor: pointer;
+}
+
+#plans .input-group label p {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: .02em;
+    margin: 0;
 }
 #request {
     margin: 55px 0 40px;

@@ -120,7 +120,7 @@ get_header('front-page');
         <div class="container">
             <div class="wrapper">
                 <h2 class="sectionHeading">Подключиться просто!</h2>
-                <form action="">
+                <form id="send">
                     <div class="choose_product">
                         <div class="input-group">
                             <label for="internet">Интернет</label>
@@ -135,15 +135,15 @@ get_header('front-page');
                             <input type="radio" value="telephonia" id="telephonia" name="choose_product">
                         </div>
                         <div class="input-group">
-                            <label fokr="video" class="active">Видеонаблюдение</label>
+                            <label for="video" class="active">Видеонаблюдение</label>
                             <input type="radio" value="video" name="choose_product" id="video">
                         </div>
                     </div>
 
                     <div class="user-data">
                         <div class="data">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="Номер телефона">
+                            <input type="text" name="name" placeholder="Имя">
+                            <input type="text" name="phone" placeholder="Номер телефона">
                         </div>
                         <input type="submit" value="Отправить">
                     </div>

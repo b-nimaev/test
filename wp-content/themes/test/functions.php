@@ -151,6 +151,13 @@ function test_scripts() {
 	wp_enqueue_script( 'jquery' );
 	wp_register_script( 'common-js', get_template_directory_uri() . '/js/common.js', array('jquery'), null, true);
 	wp_enqueue_script( 'common-js' );
+
+	wp_localize_script( 'common-js', 'send_form',
+		array(
+			'url' => admin_url('admin-ajax.php')
+		)
+	);
+
 	wp_enqueue_style( 'common-css', get_template_directory_uri() . '/assets/common.css', array(), _S_VERSION );
 	wp_enqueue_style( 'owl-styles', get_template_directory_uri() . '/assets/owl/owl.carousel.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'owl-theme', get_template_directory_uri() . '/assets/owl/owl.theme.default.min.css', array('owl-styles'), _S_VERSION );
@@ -158,6 +165,19 @@ function test_scripts() {
 	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), _S_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'test_scripts' );
+
+add_action( 'wp_ajax_send_form', 'send_form_callback' );
+function send_form_callback(){
+	$value = $_POST["value"];
+
+	print_r($value);
+	// выход нужен для того, чтобы в ответе не было ничего лишнего,
+	// только то что возвращает функция
+	wp_die();
+}
+
+add_action( 'wp_ajax_send_form', 'send_form_callback' );
+add_action( 'wp_ajax_nopriv_send_form', 'send_form_callback' );
 
 /**
  * Implement the Custom Header feature.

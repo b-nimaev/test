@@ -288,8 +288,16 @@ button {
     background-color: #F2F6F8;
     padding: 50px 50px 86px;
     border-radius: 20px;
+    transition: 300ms;
 }
 
+#request .wrapper.success {
+    padding: 50px;
+}
+
+#request .wrapper.success .sectionHeading {
+    margin: 0
+}
 #request .wrapper .sectionHeading {
     margin-bottom: 20px;
 }

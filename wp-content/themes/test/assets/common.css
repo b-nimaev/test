@@ -3,10 +3,9 @@ header {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto;
 }
-
 .container .row {
     display: flex;
     flex-wrap: wrap;
@@ -139,6 +138,12 @@ button {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
 #plans article {
     box-shadow: 0px 12px 25px rgb(90 90 90 / 12%);
     padding: 30px;
@@ -231,6 +236,17 @@ button {
     z-index: 9999;
 }
 
+#plans article.checked button {
+    background-color: #0099C8;
+    border: 1px solid #0099C8;
+}
+
+#plans article.checked button:hover {
+    background-color: #0099C8;
+    border: 1px solid #0099C8;
+    color: #fff;
+}
+
 #plans article button:hover {
     color: #C81059;
     background-color: #fff;
@@ -304,23 +320,27 @@ button {
 
 #request form .choose_product {
     display: flex;
-    margin: 0 -5px 20px;
+    margin: -10px -5px 20px;
+        flex-wrap: wrap;
 }
 
 #request form .choose_product .input-group {
-    margin: 0 5px;
+    margin: 10px 5px;
 }
 
 #request .user-data {
     display: flex;
+    flex-direction: column;
 }
 
 #request .user-data .data {
-    margin-right: 33px;
+    /* margin-right: 33px; */
+        margin-bottom: 20px;
+        display: flex;
 }
 
 #request .user-data input[type="submit"] {
-    padding: 15px 80px;
+    padding: 12px 63.5px;
     background-color: #C81059;
     border-radius: 5px;
     letter-spacing: .02em;
@@ -331,6 +351,7 @@ button {
     border: 1px solid #C81059;
     transition: cubic-bezier(1, 0, 0, 1);
     cursor: pointer;
+    height: 45px;
 }
 
 #request .user-data input[type="submit"]:hover {
@@ -352,6 +373,7 @@ button {
     letter-spacing: .02em;
     outline: none;
     border: 0;
+    flex: 1;
 }
 
 #request .user-data .data input:first-child {
@@ -418,6 +440,23 @@ footer .logotype {
     margin-right: 60px;
 }
 
+@media screen and (min-width: 1000px) {
+    .container {
+        max-width: 900px;
+    }
+
+    #request .user-data {
+        flex-direction: row;
+    }
+
+    #request .user-data .data {
+        margin-right: 33px;
+    }
+
+    #request .user-data .data {
+        display: block;
+    }
+}
 @font-face {
     font-family: 'Cera Round Pro';
     src: url('cera/CeraRoundProThin.otf');

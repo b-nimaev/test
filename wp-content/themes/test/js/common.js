@@ -63,4 +63,39 @@ $(document).ready(function () {
         }
 
     })
+
+    $(".owl-carousel .input-group input").click((e) => {
+
+        let product_id = e.target.getAttribute("data-handler");
+        let product = $(`#plans article[data-product-id=${product_id}]`)
+        product.toggleClass("option_selected")
+        if (product.hasClass("checked")) {
+            product.removeClass("checked")
+        }
+        let option_amount = product.find("label").attr("data-amount")
+        let common_amount = product.find(".price").attr("data-common-price")
+
+        let result
+
+        if (product.hasClass("option_selected")) {
+            result = parseInt(option_amount) + parseInt(common_amount)
+        } else {
+            result = parseInt(common_amount)
+        }
+
+        product.find(".result-price").html(result)
+
+    })
 })
+
+const select = function (id) {
+    let product = $(`#plans article[data-product-id=${id}]`)
+    product.toggleClass("checked")
+    if (product.hasClass("checked")) {
+        product.find("button").html("Тариф выбран")
+    } else {
+        product.find("button").html("Выбрать тариф")
+    }
+
+
+}

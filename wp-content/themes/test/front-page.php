@@ -22,7 +22,7 @@ get_header('front-page');
             <h2 class="sectionHeading">Тарифные планы</h2>
             <!-- Set up your HTML -->
             <div class="owl-carousel">
-                <article>
+                <article data-product-id="1">
                     <h4 class="product_title">Мой клик</h4>
                     <div class="speed-internet">
                         <p class="text-muted">Скорость интернета</p>
@@ -30,22 +30,22 @@ get_header('front-page');
                         <p>Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
                     </div>
                     <div class="input-group">
-                        <input type="checkbox" id="my_click_1">
-                        <label for="my_click_1">
+                        <input type="checkbox" id="my_click_1" data-handler="1">
+                        <label for="my_click_1" data-amount="100" data-handler="1">
                             <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
                         </label>
                     </div>
-                    <div class="price">
-                        <h2>399 ₽</h2>
+                    <div class="price" data-common-price="399">
+                        <h2><span class="result-price">399</span> ₽</h2>
                         <p>в месяц</p>
                     </div>
                     <p class="description">
                         *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
                     </p>
-                    <button>Выбрать тариф</button>
+                    <button onclick="select(1)">Выбрать тариф</button>
                 </article>
 
-                <article>
+                <article data-product-id="2">
                     <h4 class="product_title">Мой клик</h4>
                     <div class="speed-internet">
                         <p class="text-muted">Скорость интернета</p>
@@ -54,21 +54,21 @@ get_header('front-page');
                     </div>
                     <div class="input-group">
                         <input type="checkbox" id="my_click_2">
-                        <label for="my_click_2">
+                        <label for="my_click_2"  data-amount="100">
                             <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
                         </label>
                     </div>
-                    <div class="price">
-                        <h2>499 ₽</h2>
+                    <div class="price" data-common-price="399">
+                        <h2><span class="result-price">499</span> ₽</h2>
                         <p>в месяц</p>
                     </div>
                     <p class="description">
                         *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
                     </p>
-                    <button>Выбрать тариф</button>
+                    <button onClick="select(2)">Выбрать тариф</button>
                 </article>
 
-                <article>
+                <article data-product-id="3">
                     <h4 class="product_title">Мой клик</h4>
                     <div class="speed-internet">
                         <p class="text-muted">Скорость интернета</p>
@@ -77,21 +77,21 @@ get_header('front-page');
                     </div>
                     <div class="input-group">
                         <input type="checkbox" id="my_click_3">
-                        <label for="my_click_3">
+                        <label for="my_click_3"  data-amount="100">
                             <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
                         </label>
                     </div>
-                    <div class="price">
-                        <h2>399 ₽</h2>
+                    <div class="price" data-common-price="399">
+                        <h2><span class="result-price">399</span> ₽</h2>
                         <p>в месяц</p>
                     </div>
                     <p class="description">
                         *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
                     </p>
-                    <button>Выбрать тариф</button>
+                    <button onClick="select(3)">Выбрать тариф</button>
                 </article>
 
-                <article>
+                <article data-product-id="4">
                     <h4 class="product_title">Мой клик</h4>
                     <div class="speed-internet">
                         <p class="text-muted">Скорость интернета</p>
@@ -100,18 +100,18 @@ get_header('front-page');
                     </div>
                     <div class="input-group">
                         <input type="checkbox" id="my_click_4">
-                        <label for="my_click_4">
+                        <label for="my_click_4"  data-amount="100">
                             <p>ТВ + 100 ₽ <br>(пакет “Базовый”)</p>
                         </label>
                     </div>
-                    <div class="price">
-                        <h2>499 ₽</h2>
+                    <div class="price" data-common-price="399">
+                        <h2><span class="result-price">499</span> ₽</h2>
                         <p>в месяц</p>
                     </div>
                     <p class="description">
                         *итоговая цена зависит от варианта оплаты и пакета ТВ при необходимости
                     </p>
-                    <button>Выбрать тариф</button>
+                    <button onClick="select(4)">Выбрать тариф</button>
                 </article>
             </div>
         </div>
